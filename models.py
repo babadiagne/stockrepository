@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Class1 (models.Model):
-  auteurs = models.CharField (max_length = 30)
+  auteurs = models.CharField (max_length = 42)
   categorie = models.ForeignKey ('Class2' , on_delete=models.CASCADE)
 #first class
   def __str__ (self):
@@ -10,7 +10,7 @@ class Class1 (models.Model):
 
 #second class
 class Class2 (models.Model):
-  noms = models.CharField (max_length = 30)
+  noms = models.CharField (max_length = 45)
 
   def __str__ (self):
     return self.noms
