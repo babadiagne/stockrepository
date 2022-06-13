@@ -1,17 +1,18 @@
 from django.db import models
 
 # Create your models here.
-class Class1 (models.Model):
-  auteurs = models.CharField (max_length = 42)
-  larelation = models.ForeignKey ('Class2' , on_delete=models.CASCADE)
-#first class
-  def __str__ (self):
-    return self.auteurs
+class Article(models.Model):
+  titre=models.CharField(max_length=100)
+  auteur=models.CharField(max_length=42)
+  contenu=models.TextField(null=True)
+  date=models.DateTimeField(auto_now_add=True,auto_now=False,verbose_name="Date de parution")
+  categorie=models.ForeignKey('Categorie',on_delete=models.CASCADE)
 
-#second class
-class Class2 (models.Model):
-  noms = models.CharField (max_length = 45)
+  def __str__(self):
+    return self.titre
 
-  def __str__ (self):
-    return self.noms
+class Categorie(models.Model):
+  nom=models.CharField(max_length=30)
+  def __str__(self):
+    return self.nom
 
