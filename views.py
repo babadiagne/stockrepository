@@ -6,6 +6,7 @@ def resume_curuculum (request):
   return HttpResponse ("""
 <form method="post">
 <input type="text">
+<input type="text">
 <input type="email" placeholder="email">
 <input type="submit">
 </form>
