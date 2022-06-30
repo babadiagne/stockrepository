@@ -12,3 +12,4 @@ def resume_curuculum (request):
 </form>
  """)
 
+#member:malick diagne
