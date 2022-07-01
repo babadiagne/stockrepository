@@ -13,3 +13,4 @@ def resume_curuculum (request):
  """)
 
 #member:malick diagne
+#member:hamath diagne
