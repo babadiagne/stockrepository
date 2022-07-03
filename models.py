@@ -26,3 +26,4 @@ class Client(models.Model):
     return self.pnom
 
 #member:malick diagne
+#member:hamath
