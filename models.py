@@ -27,3 +27,4 @@ class Client(models.Model):
 
 #member:malick diagne
 #member:hamath
+#member:general
