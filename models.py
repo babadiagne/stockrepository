@@ -25,8 +25,9 @@ class Client(models.Model):
   def __str__(self):
     return self.pnom
 
-#member:malick diagne
-#member:hamath
-#member:general
-#member:fama
-#member:moussa
+class Fournisseur (models.Model):
+  nomf=models.CharField(max_length=100)
+
+  def __str__(self):
+    return self.nomf
+
