@@ -31,3 +31,4 @@ class Fournisseur (models.Model):
   def __str__(self):
     return self.nomf
 
+#member:malick diagne
