@@ -32,3 +32,4 @@ class Fournisseur (models.Model):
     return self.nomf
 
 #member:malick diagne
+#member:malick diagne
