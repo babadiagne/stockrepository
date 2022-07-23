@@ -31,5 +31,9 @@ class Fournisseur (models.Model):
   def __str__(self):
     return self.nomf
 
-#member:malick diagne
-#member:malick diagne
+class Donner (models.Model):
+  cout=models.CharField(max_length=100)
+  dimension=models.CharField(max_length=100)
+  stock=models.CharField(max_length=100)
+
+#nouvel database class xxxx
