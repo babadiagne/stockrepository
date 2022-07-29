@@ -37,3 +37,4 @@ class Donner (models.Model):
   stock=models.CharField(max_length=100)
 
 #nouvel database class xxxx
+class Stock (models.Model):
