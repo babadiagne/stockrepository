@@ -38,3 +38,4 @@ class Donner (models.Model):
 
 #nouvel database class xxxx
 class Stock (models.Model):
+  description=models.CharField (max_length=100)
